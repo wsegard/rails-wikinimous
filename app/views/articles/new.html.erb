@@ -1,0 +1,17 @@
+<h1>Add a new article</h1>
+
+<%= form_for(@article) do |f| %>
+  <div class='container'>
+    <div class='card'>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class='card'>
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+    </div>
+    <div class='card'>
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
